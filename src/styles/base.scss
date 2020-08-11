@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+
+@import '../app/components/header/header';
+@import '../app/components/footer/footer';
+
+body {
+  margin: 0;
+  padding: 0;
+  @include font(18, $text-color);
+  font-family: 'Roboto', sans-serif;
+  background: $bg-color;
+}

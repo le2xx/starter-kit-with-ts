@@ -1,0 +1,34 @@
+.header {
+  display: block;
+
+  &__logo {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    background: url('../assets/images/gear.png') no-repeat;
+    background-size: contain;
+    animation: 20s linear infinite gear;
+  }
+
+  &__title {
+    text-align: center;
+    color: $title-color;
+    text-transform: uppercase;
+  }
+
+  &__version {
+    margin: 0;
+    text-align: center;
+    color: $title-color;
+    text-transform: lowercase;
+  }
+}
+
+@keyframes gear {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
