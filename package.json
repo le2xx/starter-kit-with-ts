@@ -6,8 +6,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
-    "new-block": "node new-block.ts",
-    "gh-deploy": "gh-pages -d dist"
+    "block:create": "node new-block.ts",
+    "gh:deploy": "gh-pages -d dist"
   },
   "keywords": [
     "webpack",
